@@ -56,6 +56,7 @@
 
 ;; 
 
+
 (defn is-valid-page-num?
   "Check if num is valid page num"
   [num]
@@ -88,6 +89,7 @@
   (->> (fetch-hickory (get-url num))
        (s/select (s/child (s/tag :a)))
        (filter #(-> % :attrs :onclick find-link-pdf?))
-       (mapv (fn [coll] {:title (parse-title coll)
+       (pmap (fn [coll] {:title (parse-title coll)
                         :link  (parse-link coll)
-                        :date  (parse-date coll)}))))
+                        :date  (parse-date coll)}))
+       (into [])))
