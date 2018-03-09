@@ -3,7 +3,7 @@
 [![AGPL License](http://img.shields.io/badge/license-AGPL%20v3-red.svg?style=flat)](http://opensource.org/licenses/AGPL-3.0)
 [![Circle CI](https://circleci.com/gh/coldnew/esunconsulting.clj.svg?style=svg)](https://circleci.com/gh/coldnew/esunconsulting.clj)
 
-A Clojure library designed to fetch report from [Esunconsulting](https://www.esunconsulting.com.tw/all_reports.asp) and send to telegram group.
+A Clojure library designed to fetch report from [Esunconsulting](https://www.esunconsulting.com.tw/all_reports.asp) and create hash-map.
 
 [![Clojars Project](https://clojars.org/coldnew/esunconsulting/latest-version.svg)](http://clojars.org/coldnew/esunconsuling)
 
