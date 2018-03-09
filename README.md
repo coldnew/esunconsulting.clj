@@ -5,7 +5,7 @@
 
 A Clojure library designed to fetch report from [Esunconsulting](https://www.esunconsulting.com.tw/all_reports.asp) and send to telegram group.
 
-[![Clojars Project](https://clojars.org/coldnew/left-pad/latest-version.svg)](http://clojars.org/coldnew/esunsonsulting)
+[![Clojars Project](https://clojars.org/coldnew/esunconsulting/latest-version.svg)](http://clojars.org/coldnew/esunconsuling)
 
 [Latest codox API docs](https://coldnew.github.io/esunconsulting.clj/).
 
