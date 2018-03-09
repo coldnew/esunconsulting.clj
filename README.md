@@ -17,7 +17,7 @@ A Clojure library designed to fetch report from [Esunconsulting](https://www.esu
 
 ;; get reports map from page 1
 (get-report 1)
-;; => [{:title "AAA" :link "http:/bbb.pdf" :date "20180309"} {:title "CCC" :link "http:/ddd.pdf" :date "20180309"}]
+;; => [{:title "A" :link "http:/b.pdf" :date "20180309"} {:title "C" :link "http:/d.pdf" :date "20180309"}]
 
 ```
 ## Examples
