@@ -7,5 +7,9 @@
                  [clj-http "3.3.0"]
                  [cheshire "5.6.3"]
                  [hickory "0.6.0"]]
+
+  :plugins [[lein-codox "0.9.4"]]
+
   :jvm-opts ["-Dclojure.compiler.direct-linking=true"]
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}}
+  :codox {:source-uri "https://github.com/coldnew/esunconsulting.clj/blob/master/{filepath}#L{line}"})
