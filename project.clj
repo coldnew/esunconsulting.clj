@@ -6,7 +6,6 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [clj-http "3.3.0"]
                  [cheshire "5.6.3"]
-                 [hickory "0.6.0"]
-                 [org.clojure/data.codec "0.1.1"]]
+                 [hickory "0.6.0"]]
   :jvm-opts ["-Dclojure.compiler.direct-linking=true"]
   :profiles {:uberjar {:aot :all}})
