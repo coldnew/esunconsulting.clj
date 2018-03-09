@@ -8,7 +8,6 @@ FIXME
 
 ## License
 
-Copyright © 2018 FIXME
+Copyright © 2018 Yen-Chin, Lee
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the [GNU Affero General Public License 3.0 (AGPL-3.0)](https://www.gnu.org/licenses/agpl-3.0.en.html).
