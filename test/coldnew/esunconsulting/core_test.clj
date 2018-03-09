@@ -13,8 +13,8 @@
    (contains? coll :link)
    (contains? coll :date)))
 
-(deftest get-report
+(deftest get-report-test
   (testing "Report is hash-map in vector, contains keys: :title :link :date"
-    (let [reoprt1 (get-report 1)]
+    (let [report1 (get-report 1)]
       (is (every? true? (mapv verify-report-map report1)))
       )))
