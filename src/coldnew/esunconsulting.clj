@@ -12,8 +12,8 @@
 
 The result is build in vector contains hash-map, like following:
 
-  [{:title \"AAA\" :link \"http:/bbb.pdf\" :date \"20180309\"}
-   {:title \"CCC\" :link \"http:/ddd.pdf\" :date \"20180309\"}]"
+  [{:title \"AAA\" :link \"http://bbb.pdf\" :date \"20180309\"}
+   {:title \"CCC\" :link \"http://ddd.pdf\" :date \"20180309\"}]"
   ([] (get-report 1))
   ([num] {:pre [(integer? num) (impl/is-valid-page-num? num)]}
    (impl/get-report num)))
