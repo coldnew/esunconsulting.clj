@@ -83,6 +83,28 @@
                (parse-link hickory))
       (nth 1)))
 
+(defn parse-type [hickory]
+  (let [link (parse-link hickory)]
+    (cond
+      (str/includes? link "訪談摘要")         :訪談摘要
+      (str/includes? link "法說摘要")         :法說摘要
+      (str/includes? link "複委託晨訊")       :複委託晨訊
+      (str/includes? link "台股晨訊")         :台股晨訊
+      (str/includes? link "美股晨訊")         :美股晨訊
+      (str/includes? link "訪談報告")         :訪談報告
+      (str/includes? link "期貨晨訊")         :期貨晨訊
+      (str/includes? link "產業週報")         :產業週報
+      (str/includes? link "台股策略週報")     :台股策略週報
+      (str/includes? link "期貨市場投資週報") :期貨市場投資週報
+      (str/includes? link "研究報告")         :研究報告
+      (str/includes? link "總經雙週報")       :總經雙週報
+      (str/includes? link "期貨市場投資週報") :期貨市場投資週報
+      (str/includes? link "訪談摘要")         :訪談摘要
+      (str/includes? link "法說摘要")         :法說摘要
+      (str/includes? link "即時評析")         :即時評析
+      (str/includes? link "總體經濟暨台股週報")  :總體經濟暨台股週報
+      :else :未分類)))
+
 (defn get-report
   "Get the page report according to page num."
   [num]
@@ -91,4 +113,5 @@
        (filter #(-> % :attrs :onclick find-link-pdf?))
        (mapv (fn [coll] {:title (parse-title coll)
                         :link  (parse-link coll)
-                        :date  (parse-date coll)}))))
+                        :date  (parse-date coll)
+                        :type  (parse-type coll)}))))
