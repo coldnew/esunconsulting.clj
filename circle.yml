@@ -1,0 +1,33 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+machine:
+  timezone: Asia/Taipei
+  java:
+    version: oraclejdk8
+
+dependencies:
+  pre:
+    - wget -O lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+    - chmod 755 lein
+    - ./lein -v
+    - ./lein deps
+  cache_directories:
+    - $HOME/.m2
+    - $HOME/.lein
+    - $HOME/bin
+
+test:
+  override:
+    - ./lein test
+
+deployment:
+  publish:
+    branch: master
+    commands:
+      - ./lein codox
+      - chmod +x deploy.sh
+      - sed -i 's%https://${GH_TOKEN}@${GH_REF}%git@github.com:coldnew/esunconsulting.clj.git%g' deploy.sh
+      - ./deploy.sh
