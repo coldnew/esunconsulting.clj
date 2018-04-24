@@ -97,6 +97,7 @@
       (str/includes? link "台股策略週報")     :台股策略週報
       (str/includes? link "期貨市場投資週報") :期貨市場投資週報
       (str/includes? link "研究報告")         :研究報告
+      (str/includes? link "研究摘要")         :研究摘要
       (str/includes? link "總經雙週報")       :總經雙週報
       (str/includes? link "期貨市場投資週報") :期貨市場投資週報
       (str/includes? link "訪談摘要")         :訪談摘要
@@ -106,6 +107,7 @@
       (str/includes? link "投資月刊")         :投資月刊
       (str/includes? link "評論")             :評論
       (str/includes? link "總體經濟暨台股週報")  :總體經濟暨台股週報
+      (str/includes? link "即時題材")         :即時題材
       :else :未分類)))
 
 (defn get-report
