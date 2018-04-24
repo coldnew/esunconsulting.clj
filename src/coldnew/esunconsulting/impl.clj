@@ -102,6 +102,9 @@
       (str/includes? link "訪談摘要")         :訪談摘要
       (str/includes? link "法說摘要")         :法說摘要
       (str/includes? link "即時評析")         :即時評析
+      (str/includes? link "營收報表")         :營收報表
+      (str/includes? link "投資月刊")         :投資月刊
+      (str/includes? link "評論")             :評論
       (str/includes? link "總體經濟暨台股週報")  :總體經濟暨台股週報
       :else :未分類)))
 
