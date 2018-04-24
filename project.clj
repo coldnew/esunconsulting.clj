@@ -1,4 +1,4 @@
-(defproject coldnew/esunconsulting "0.1.2"
+(defproject coldnew/esunconsulting "0.1.3"
   :description "Clojure library to fetch report link from esunconsulting."
   :url "https://github.com/coldnew/esunconsulting.clj"
   :license {:name "GNU Affero General Public License 3.0 (AGPL-3.0)"
